@@ -26,4 +26,25 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)sumAndDisplay:(id)sender
+{
+    float result = [[[self textFieldOne] text] floatValue] + [[[self textFieldTwo] text] floatValue];
+    
+    NSString *stringResult = [NSString stringWithFormat:@"%.4f", result];
+    
+    self.resultLabel.text = stringResult;
+    
+}
+
+- (IBAction)firstSliderReleased:(id)sender {
+    UISlider * firstSlider = (UISlider *) sender;
+    float valor1 = firstSlider.value;
+    self.textFieldOne.text = [NSString stringWithFormat:@"%f", valor1];
+}
+
+- (IBAction)secondSliderReleased:(id)sender {
+    UISlider * secondSlider = (UISlider *) sender;
+    float valor2 = secondSlider.value;
+    self.textFieldTwo.text = [NSString stringWithFormat:@"%f", valor2];
+}
 @end
