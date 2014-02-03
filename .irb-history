@@ -1,0 +1,16 @@
+query("button")
+query("button")
+query("button")
+query("slider")
+query("input")
+query("field")
+query("text")
+query("text_field")
+query("TextField")
+query("textfield")
+query("TextField")[0]
+query("TextField")[0].public_methods
+query("TextField")[0].p
+exit
+query("TextField")
+exit
