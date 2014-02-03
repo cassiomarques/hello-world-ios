@@ -36,15 +36,15 @@
     
 }
 
-- (IBAction)firstSliderReleased:(id)sender {
-    UISlider * firstSlider = (UISlider *) sender;
-    float valor1 = firstSlider.value;
-    self.textFieldOne.text = [NSString stringWithFormat:@"%f", valor1];
-}
-
-- (IBAction)secondSliderReleased:(id)sender {
-    UISlider * secondSlider = (UISlider *) sender;
-    float valor2 = secondSlider.value;
-    self.textFieldTwo.text = [NSString stringWithFormat:@"%f", valor2];
+- (IBAction)sliderChanged:(id)sender {
+    UISlider * slider = (UISlider *) sender;
+    float value = slider.value;
+    NSString * strValue = [NSString stringWithFormat:@"%f", value];
+    
+    if (self.firstSlider == slider) {
+        self.textFieldOne.text = strValue;
+    } else {
+        self.textFieldTwo.text = strValue;
+    }
 }
 @end

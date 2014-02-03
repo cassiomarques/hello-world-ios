@@ -12,10 +12,11 @@
 @property (weak) IBOutlet UITextField * textFieldOne;
 @property (weak) IBOutlet UITextField * textFieldTwo;
 @property (weak) IBOutlet UILabel * resultLabel;
+@property (weak) IBOutlet UISlider * firstSlider;
 
 - (IBAction) sumAndDisplay:(id) sender;
-- (IBAction)firstSliderReleased:(id)sender;
-- (IBAction)secondSliderReleased:(id)sender;
+- (IBAction) sliderChanged:(id)sender;
+
 
 
 @end

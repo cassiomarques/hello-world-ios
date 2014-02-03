@@ -50,20 +50,21 @@
                                 <rect key="frame" x="14" y="136" width="110" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="firstSliderReleased:" destination="vXZ-lx-hvc" eventType="valueChanged" id="uQE-Vj-vPX"/>
+                                    <action selector="sliderChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="u0u-S4-6Lc"/>
                                 </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="250" minValue="0.0" maxValue="500" translatesAutoresizingMaskIntoConstraints="NO" id="vdq-CQ-v53">
                                 <rect key="frame" x="136" y="135" width="118" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="secondSliderReleased:" destination="vXZ-lx-hvc" eventType="valueChanged" id="oLr-mM-Vhl"/>
+                                    <action selector="sliderChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="t5Q-60-183"/>
                                 </connections>
                             </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="firstSlider" destination="frM-5t-gAe" id="Ir5-Jn-yKb"/>
                         <outlet property="resultLabel" destination="tEp-Ap-xaC" id="23h-oI-gwm"/>
                         <outlet property="textFieldOne" destination="tlx-X0-EsR" id="JIw-S1-v1m"/>
                         <outlet property="textFieldTwo" destination="teC-x3-1mA" id="bsy-Ud-heG"/>
